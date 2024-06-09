@@ -1,6 +1,7 @@
 import {useState} from 'react';
 const SearchCard=({title,edition_count})=>{
     const [Visible,setVisible]=useState(true);
+    edition_count=edition_count.toString();
     const ispresent=()=>{
       for(let i=0;i<localStorage.length;i++){
         if(localStorage.key(i)===title &&localStorage.getItem(title)===edition_count)
